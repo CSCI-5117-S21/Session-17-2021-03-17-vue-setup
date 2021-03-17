@@ -3,7 +3,6 @@
 Changelog:
 
 1. I've changed this readme file very slightly.
-2. I've modified the basic file setup to be 1) worse, 2) better at demonstrating "binding"
 
 ## Project setup (Do once after checkout)
 ```
