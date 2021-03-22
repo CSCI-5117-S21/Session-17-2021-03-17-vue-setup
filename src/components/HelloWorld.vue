@@ -8,14 +8,17 @@
     <editable-input v-model="name"/> value:{{name}}
 <br/>
     <keyword word="apple">A <b>DELICOUS</b> TREAT</keyword>
+<br/>
+    <rating-interface v-model="star" :prediction="4"/>
   </div>
 </template>
 
 <script>
 import EditableInput from './editableInput.vue';
 import Keyword from './keyword.vue';
+import RatingInterface from './ratingInterface.vue';
 export default {
-  components: { EditableInput, Keyword },
+  components: { EditableInput, Keyword, RatingInterface },
   name: 'HelloWorld',
   props: {
     msg: String
@@ -23,6 +26,7 @@ export default {
   data: function() {
     return {
       count: 0,
+      star: -1,
       name: "test",
     };
   }
