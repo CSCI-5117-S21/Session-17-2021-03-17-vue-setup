@@ -6,14 +6,14 @@
     <input v-model="name" /> 
     <div :title="name+'!!!'" >happy </div>
 
-    <editable-span v-model="name"/>
+    <editable-input v-model="name"/>
   </div>
 </template>
 
 <script>
-import editableSpan from './editableSpan.vue';
+import EditableInput from './editableInput.vue';
 export default {
-  components: { editableSpan },
+  components: { EditableInput },
   name: 'HelloWorld',
   props: {
     msg: String
