@@ -3,9 +3,8 @@
 <template>
     <div style="display:inline-block">
         <span v-if="!editable" @click="show" >{{value}}</span>
-        <div v-else>
+        <div v-else @focusout="hide">
             <input v-model="contents" />
-            <button @click="hide"> done editing </button>
         </div>
     </div>
 </template>

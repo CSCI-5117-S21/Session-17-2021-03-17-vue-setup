@@ -3,17 +3,19 @@
     <span>{{count}}</span>
     <h1 v-if="count < 10">{{ msg+"!!!!" }}</h1>
     <button @click="count++"> click me </button>
-    <input v-model="name" /> 
     <div :title="name+'!!!'" >happy </div>
-
-    <editable-input v-model="name"/>
+<br/>
+    <editable-input v-model="name"/> value:{{name}}
+<br/>
+    <keyword word="apple">A <b>DELICOUS</b> TREAT</keyword>
   </div>
 </template>
 
 <script>
 import EditableInput from './editableInput.vue';
+import Keyword from './keyword.vue';
 export default {
-  components: { EditableInput },
+  components: { EditableInput, Keyword },
   name: 'HelloWorld',
   props: {
     msg: String
