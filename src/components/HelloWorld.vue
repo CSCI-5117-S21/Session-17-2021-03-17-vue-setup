@@ -6,7 +6,7 @@
     <input v-model="name" /> 
     <div :title="name+'!!!'" >happy </div>
 
-    <editable-span @changed="name=$event"/>
+    <editable-span v-model="name"/>
   </div>
 </template>
 
@@ -21,8 +21,7 @@ export default {
   data: function() {
     return {
       count: 0,
-      name: "",
-      names: ["daniel", "yang", "alexander", "ally", "alvin", "an"]
+      name: "test",
     };
   }
 }
