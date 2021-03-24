@@ -12,6 +12,9 @@
 export default {
     name: "wordList",
     props: ['value'],
+    created: function() {
+        this.inputContents = "doug";
+    },
     data: function() {
         return {
             inputContents: ""
